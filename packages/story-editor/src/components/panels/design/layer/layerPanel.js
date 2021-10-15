@@ -23,6 +23,7 @@ import styled from 'styled-components';
 /**
  * Internal dependencies
  */
+import RightClickMenu from '../../../canvas/rightClickMenu';
 import { Panel, PanelTitle, PanelContent } from '../../panel';
 import { LAYER_HEIGHT, DEFAULT_LAYERS_VISIBLE } from './constants';
 import LayerList from './layerList';
@@ -78,6 +79,7 @@ function LayerPanel() {
         <PanelContent isSecondary padding={'0'}>
           <LayerList layers={layers} />
         </PanelContent>
+        <RightClickMenu />
       </Panel>
     </Container>
   );
