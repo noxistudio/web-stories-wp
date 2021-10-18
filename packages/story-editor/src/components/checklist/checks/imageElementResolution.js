@@ -37,7 +37,8 @@ import { filterStoryElements, getVisibleThumbnails } from '../utils';
 import { useRegisterCheck } from '../countContext';
 import { useIsChecklistMounted } from '../popupMountedContext';
 
-// TODO: This does not seem to accommodate for scaling.
+// TODO: https://github.com/google/web-stories-wp/issues/9439
+// This does not seem to accommodate for scaling.
 export function imageElementResolution(element) {
   const imageResolutionLow =
     element.resource?.height < 2 * element.height ||
